@@ -39,11 +39,17 @@ div.item> a:hover{
 
 main> h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2.3em;
-    padding: 50px;
+    font-size: 2em;
+    padding: 70px;
+    margin: -30px;
     color: white;
-    display: flex;
-    flex: auto;
     text-align: left;
     
+}
+
+main > p{
+    color: whitesmoke;
+    padding: 40px;
+    margin-top: -90px;
+    font-style: italic;
 }
