@@ -4,206 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio Pessoal</title>
-  <style>
-    :root {
-      --azul-escuro: #0d1b2a;
-      --azul-claro: #1b263b;
-      --azul-detalhe: #415a77;
-      --branco: #e0e1dd;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: var(--azul-escuro);
-      color: var(--branco);
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: var(--azul-claro);
-      padding: 1rem;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 10;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .menu-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .menu-toggle {
-      background: none;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .menu-toggle div {
-      width: 25px;
-      height: 3px;
-      background-color: var(--branco);
-      margin: 4px 0;
-      transition: 0.4s;
-    }
-
-    /* Animação quando o menu está aberto */
-    .menu-toggle.open div:nth-child(1) {
-      transform: translateY(7px) rotate(45deg);
-    }
-    .menu-toggle.open div:nth-child(2) {
-      opacity: 0;
-    }
-    .menu-toggle.open div:nth-child(3) {
-      transform: translateY(-7px) rotate(-45deg);
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100%;
-      width: 300px;
-      background-color: var(--azul-detalhe);
-      box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
-      padding: 2rem;
-      transform: translateX(100%);
-      opacity: 0;
-      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-      z-index: 20;
-    }
-
-    nav.show-nav {
-      transform: translateX(0);
-      opacity: 1;
-    }
-
-    nav a {
-      color: var(--branco);
-      text-decoration: none;
-      padding: 1rem;
-      display: block;
-      font-size: 1.2rem;
-      transition: background-color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: var(--azul-claro);
-      border-radius: 5px;
-    }
-
-    /* Botão de Fechar */
-    .close-btn {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 30px;
-      color: var(--branco);
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-
-    main {
-      padding-top: 100px;
-    }
-
-    section {
-      padding: 4rem 1rem;
-      border-bottom: 1px solid var(--azul-claro);
-    }
-
-    h1, h2 {
-        font-size: 2em;
-      color: var(--azul-detalhe);
-      margin-bottom: 1rem;
-      text-shadow: 5px 5px 5px black;
-    }
-    h3{
-        color:var(--azul-detalhe);
-        padding: 10px;
-    }
-
-    .btn {
-      background-color: var(--azul-detalhe);
-      color: var(--branco);
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-
-    .btn:hover {
-      background-color: var(--azul-claro);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: var(--azul-claro);
-    }
-
-    .intro {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-    }
-    .projetos-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.projeto {
-  text-align: center;
-}
-
-    img{
-        width: 300px;
-        height: 200px;
-    }
-    section#projetos img {
-  
-  height: auto;
-  transition: transform 0.3s ease; /* Suaviza a transição */
-}
-
-section#projetos a img:hover {
-  transform: scale(1.1); /* Aumenta a imagem em 10% */
-}
-
-    .intro img {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      object-fit: cover;
-      background-color: transparent;
-    }
-
-    .intro-text {
-      flex: 1;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -239,7 +40,9 @@ section#projetos a img:hover {
 
     <section id="sobre">
       <h2>Sobre Mim</h2>
-      <p>Me chamo Nicolas Pita, tenho 24 anos e moro em São Bernardo do Campo, São Paulo. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas pela UFBRA</p>
+      <p>Me chamo Nicolas Pita, tenho 24 anos e moro em São Bernardo do Campo, São Paulo. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas pela UFBRA. <br>
+        Atualmente estou estudando Front-End, mas a area que quero é mais focada no Back-End.
+      </p>
     </section>
 
     <section id="projetos">
@@ -262,17 +65,52 @@ section#projetos a img:hover {
 
     <section id="habilidades">
       <h2>Habilidades</h2>
-      <p>[Liste aqui suas linguagens, frameworks, ferramentas e outras habilidades técnicas.]</p>
+      <div class="habilidades-grid">
+        <div class="habilidade">
+          <h3>HTML 5</h3>
+          <img id="logo" src="html5.webp" alt="">
+        </div>
+        <div class="habilidade">
+          <h3>CSS 3</h3>
+          <img id="logo" src="logo-css-3.webp" alt="">
+        </div>
+        <div class="habilidade">
+          <h3>JAVASCRIPT (em andamento)</h3>
+          <img id="logo" src="JavaScript-logo.webp" alt="">
+        </div>
+        <div class="habilidades">
+          <h3>PYTHON (em andamento) </h3>
+          <img id="logo" src="python-logo.webp" alt="">
+        </div>
+        <div class="habilidade">
+          <h3>SQL (em andamento)</h3>
+          <img id="logo" src="mysql_PNG29.webp" alt="">
+        </div>
+      </div>
     </section>
 
     <section id="contato">
       <h2>Contato</h2>
-      <p>[Coloque aqui seu e-mail, redes sociais, ou um formulário de contato se quiser.]</p>
+      <div class="contatos-grid">
+        <div class="contato">
+          
+          <h3>Instagram</h3>
+          <a href="https://www.instagram.com/nicolaspita_/" target="_blank"><img id="lgcont" src="logo-insta.png" alt=""></a>
+        </div>
+        <div class="contato">
+          <h3>GitHub</h3>
+          <a href="https://github.com/Nicolaspitaa" target="_blank"><img id="lggt" src="github-mark-white.png" alt=""></a>
+        </div>
+        <div class="contato">
+          <h3>WhatsApp</h3>
+          <a href="https://api.whatsapp.com/send?phone=5511965887335" target="_blank"><img id="lgwp" src="whatsapp-logo.png" alt=""></a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 [Seu Nome]. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Nicolas Pita. Todos os direitos reservados.</p>
   </footer>
 
   <script>
@@ -282,6 +120,7 @@ section#projetos a img:hover {
       nav.classList.toggle('show-nav');
       menuToggle.classList.toggle('open');
     }
+    
   </script>
 </body>
 </html>
