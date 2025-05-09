@@ -167,6 +167,17 @@
       justify-content: space-between;
       gap: 2rem;
     }
+    .projetos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.projeto {
+  text-align: center;
+}
+
     img{
         width: 300px;
         height: 200px;
@@ -232,12 +243,22 @@ section#projetos a img:hover {
     </section>
 
     <section id="projetos">
-      <h2>Projetos</h2>
-      <h3>Projeto Login</h3>
-      <a href="https://nicolaspitaa.github.io/projeto-login/" target="_blank"><img src="LOGIN.PNG" alt="foto"></a>
-      <h3>Projeto Social</h3>
-      <img src="" alt="foto2">
-    </section>
+        <h2>Projetos</h2>
+        <div class="projetos-grid">
+          <div class="projeto">
+            <h3>Projeto Login</h3>
+            <a href="https://nicolaspitaa.github.io/projeto-login/" target="_blank" rel="noopener noreferrer">
+              <img src="LOGIN.PNG" alt="Projeto Login">
+            </a>
+          </div>
+          <div class="projeto">
+            <h3>Projeto Social</h3>
+            <a href="https://nicolaspitaa.github.io/projeto-social/" target="_blank" rel="noopener noreferrer">
+              <img src="SOCIAL.PNG" alt="Projeto Social">
+            </a>
+          </div>
+        </div>
+      </section>
 
     <section id="habilidades">
       <h2>Habilidades</h2>
